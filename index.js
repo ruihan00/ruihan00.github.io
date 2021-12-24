@@ -18,7 +18,7 @@ function nextSequence() {
 }
 function animateButton(color) {
   $("#" + color).fadeOut(50).fadeIn(50);
-  var audio = new Audio("sounds/" + color + ".mp3");
+  var audio = new Audio("Sounds/" + color + ".mp3");
   audio.play();
 }
 
@@ -34,7 +34,7 @@ function updateHighScore() {
 }
 
 function reset() {
-  var audio = new Audio("sounds/wrong.mp3");
+  var audio = new Audio("Sounds/wrong.mp3");
   audio.play();
   $("#level-title").text("Game Over, Press any key to restart");
 
