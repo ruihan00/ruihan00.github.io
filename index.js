@@ -43,6 +43,7 @@ function reset() {
   gameSequence = [];
   userClickedSequence = [];
   userLevel = 0;
+  gameStart = false;
 }
 
 $(".btn").click(function(event) {
