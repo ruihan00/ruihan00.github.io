@@ -61,5 +61,8 @@ $(".btn").click(function(event) {
 });
 
 $(document).keydown(function() {
-  nextSequence();
+  if (!gameStart) {
+    nextSequence();
+    gameStart = true;
+  }
 });
