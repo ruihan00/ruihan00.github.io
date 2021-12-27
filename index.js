@@ -19,7 +19,7 @@ function nextSequence() {
 }
 function animateButton(color) {
   $("#" + color).fadeOut(50).fadeIn(50);
-  var audio = new Audio("sounds/" + color + ".mp3");
+  var audio = new Audio("Sounds/" + color + ".mp3");
   audio.play();
 }
 
