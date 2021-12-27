@@ -52,7 +52,7 @@ $(".btn").click(function(event) {
   animateButton(userChosenColor);
   if (checkAnswer(userClickedSequence.length - 1)) {
       if(userClickedSequence.length === gameSequence.length) {
-        setTimeout(nextSequence, 1000);
+        setTimeout(nextSequence, 500);
       };
   } else {
 
@@ -63,7 +63,7 @@ $(".btn").click(function(event) {
 
 $(document).keydown(function() {
   if (!gameStart) {
-    nextSequence();
+    setTimeout(nextSequence, 500);
     gameStart = true;
   }
 });
