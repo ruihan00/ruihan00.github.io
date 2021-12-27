@@ -10,11 +10,33 @@ body {
   color: #FEF2BF;
 }
 
-#highscore {
+#instructionButton {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-right: 30%;
+  color: #FEF2BF;
+  background-color: Transparent;
+  border-color: Transparent;
+  display: inline-block;
+
+}
+
+.text {
   font-family: 'Press Start 2P', cursive;
   font-size: 1rem;
   margin:  5%;
   color: #FEF2BF;
+}
+
+#highscore {
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  margin-top: 2%;
+  margin-left: 30%;
+  color: #FEF2BF;
+  text-align: right;
 }
 .container {
   display: block;
@@ -56,4 +78,42 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgb(0,0,0);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
