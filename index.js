@@ -5,6 +5,7 @@ var userLevel = 0;
 var gameStart = false;
 var highScore = 0;
 
+
 function nextSequence() {
     $("#level-title").text("Level " + userLevel);
     updateHighScore();
@@ -18,7 +19,7 @@ function nextSequence() {
 }
 function animateButton(color) {
   $("#" + color).fadeOut(50).fadeIn(50);
-  var audio = new Audio("Sounds/" + color + ".mp3");
+  var audio = new Audio("sounds/" + color + ".mp3");
   audio.play();
 }
 
@@ -34,9 +35,10 @@ function updateHighScore() {
 }
 
 function reset() {
-  var audio = new Audio("Sounds/wrong.mp3");
+  var audio = new Audio("sounds/wrong.mp3");
   audio.play();
   $("#level-title").text("Game Over, Press any key to restart");
+
 
 
   /*reset all game variables*/
@@ -52,7 +54,7 @@ $(".btn").click(function(event) {
   animateButton(userChosenColor);
   if (checkAnswer(userClickedSequence.length - 1)) {
       if(userClickedSequence.length === gameSequence.length) {
-        setTimeout(nextSequence, 500);
+        setTimeout(nextSequence, 1000);
       };
   } else {
 
@@ -60,10 +62,21 @@ $(".btn").click(function(event) {
   }
 
 });
-
 $(document).keydown(function() {
   if (!gameStart) {
-    setTimeout(nextSequence, 500);
+    setTimeout(nextSequence, 1000);
     gameStart = true;
   }
 });
+
+
+var btn = $("#instructionButton");
+var popUpbox = $(".modal");
+var closeBtn = $(".close");
+
+btn.click(function() {
+  popUpbox.css("display", "block");
+})
+closeBtn.click(function() {
+  popUpbox.css("display", "none");
+})
