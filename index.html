@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9885c2db7a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <title>Rui Han's Personal Site</title>
+</head>
+
+<body>
+    <div id="navbar" onclick="typewriter()">
+        <ul>
+            <li><a class="active" href="#intro-grid">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience-section">Expriences</a></li>
+            <li><a href="#project-section">Projects</a></li>
+            <li><a href="#random-section">Random Stuff</a></li>
+            <li><button id="darkmode-btn" onclick="{toggleLightMode()}">
+                    <i class="fa-regular fa-moon"></i>
+                </button></li>
+        </ul>
+    </div>
+    <!-- Home -->
+
+    <div id="intro-grid">
+        <div id="intro">
+        </div>
+
+    </div>
+    <script src="intro.js"></script>
+    <hr>
+
+
+
+    <div id="about">
+        <div id="about-pic">
+            <img class="round-pic" src="./assets/profilepic.jpeg">
+        </div>
+
+        <div id="about-text">
+
+            <p>I am a Year 1 Computer Science Undergraduate at
+                <a class="about-link" href="https://www.comp.nus.edu.sg/">National University of Singapore</a>.
+                I aspire to build useful applications and software in the future!
+            </p>
+            <p>
+                <a class="about-icon" href="https://github.com/ruihan00"><i class="fab fa-github"></i></a>
+                <a class="about-icon" href="https://www.linkedin.com/in/lau-rui-han"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a class="about-icon"><i class="fa-solid fa-envelope"></i></a>
+            </p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div id="experience-section">
+        <!-- Homepal  -->
+        <div class="experience">
+            <div class="experience-details">
+                <p class="experience-title">Full-stack Developer Intern</p>
+                <p class="experience-duration">May 2022 - Present</p>
+                <p class="experience-description">Develop a software to be used in conjunction with HomePal's fall
+                    detection tech</p>
+                <div class="techstack-list">
+                    <div class="techstack">
+                        <i class="fa-brands fa-react techstack-icon"></i>
+                        <p class="techstack-name">React</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="fa-brands fa-node-js techstack-icon"></i>
+                        <p class="techstack-name">NodeJS</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="fa-brands fa-envira techstack-icon"></i>
+                        <p class="techstack-name">MongoDB</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="fa-brands fa-git-alt techstack-icon"></i>
+                        <p class="techstack-name">Git</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="experience-pic">
+                <img class="round-pic experience-img" src="./assets/homepal.png" alt="">
+            </div>
+        </div>
+        <!-- DuinoCode -->
+        <div class="experience">
+            <div class="experience-details">
+                <p class="experience-title">Teaching Assistant</p>
+                <p class="experience-duration">May 2022 - Present</p>
+                <p class="experience-description">Assist in teaching computational thinking to students aged 4 to 10</p>
+                <div class="techstack-list">
+                    <div class="techstack">
+                        <i class="devicon-cplusplus-plain techstack-icon"></i>
+                        <p class="techstack-name">C++</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="fa-brands fa-python techstack-icon"></i>
+                        <p class="techstack-name">Python</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="devicon-arduino-plain techstack-icon"></i>
+                        <p class="techstack-name">Arduino</p>
+                    </div>
+                </div>
+            </div>
+            <div class="experience-pic">
+                <img class="round-pic experience-img" src="./assets/DuinoCode.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="project-section">
+        <div class="project">
+            <div class="project-img">
+
+            </div>
+            <div class="project-details">
+                <p class="project-title">EnterPRIZE</p>
+                <p class="project-description">
+                    Collaborated in a group of 4 to develop a platform for the
+                    social enterprise community to tackle the problem statement 
+                    provided by RaiseSG. <br>
+                    Top 9 teams in <a href="https://dsc.comp.nus.edu.sg/hack4good2022">HackForGood 2022</a> 
+                </p>
+                <a class="project-link">
+                    
+                </a>
+                <a class="project-vid">
+
+                </a>
+                <div class="techstack-list">
+                    <div class="techstack">
+                        <i class="devicon-flutter-plain techstack-icon"></i>
+                        <p class="techstack-name">Flutter</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="devicon-firebase-plain techstack-icon"></i>
+                        <p class="techstack-name">Firebase</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h1>More Coming Soon ... </h1>
+    </div>
+
+    <hr>
+
+    <div id="random-section">
+        <!-- Simon Says -->
+        <div class="random">
+            <div class="random-details">
+                <p class="random-title">Simon Says!</p>
+                <p class="random-description">
+                    Test Your Memory Here!  
+                    <button onclick="{openSimonSays()}" class ="game-play">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </button>
+                    
+                    <br>
+                    Remember the new tile and those shown before and click the corresponding tiles!
+                    <br>
+                </p>
+                <a class="random-link">
+                    
+                </a>
+        
+                <div class="techstack-list">
+                    <div class="techstack">
+                        <i class="devicon-html5-plain techstack-icon"></i>
+                        <p class="techstack-name">HTML</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="devicon-css3-plain techstack-icon"></i>
+                        <p class="techstack-name">CSS</p>
+                    </div>
+                    <div class="techstack">
+                        <i class="devicon-javascript-plain techstack-icon"></i>
+                        <p class="techstack-name">JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="random-img">
+                <img class="" src="./assets/Simon-says.png">
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Enter your highscore!</p>
+              <input placeholder="Whats your name?">
+              <input placeholder="Whats your highscore?">
+                <button onclick="{submitHighScore()}">Submit</button>
+            </div>
+          
+          </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

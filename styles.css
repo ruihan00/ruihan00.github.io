@@ -1,0 +1,362 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Waiting+for+the+Sunrise&display=swap');
+body {
+    margin: 0;
+    font-family: "Waiting for the sunrise";
+    background-color: white;
+    color: black;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+hr {
+    width: 7%;
+    border-top: 7px dotted;
+    opacity: 50%;
+    padding: 0% auto;
+    margin: 10px auto;
+    border-bottom: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#navbar:not(.dark-mode) {
+    background-color: rgba(255,255,255,0.9);
+}
+
+
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10% 0 0;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: end;
+}
+
+
+#navbar li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#darkmode-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    opacity: 45%;
+    
+}
+#darkmode-btn:not(.dark-mode) {
+    color: black;
+}
+
+#darkmode-btn:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar li a:hover {
+    background-color: #ddd;
+}
+
+#navbar li a:hover:not(.dark-mode) {
+    background-color: #666;
+    color: white;
+}
+
+
+
+
+#profile-pic {
+    margin: 10% 0%;
+    text-align: left;
+}
+
+.round-pic {
+    border-radius: 50%;
+    width: 20rem;
+    
+}
+
+
+
+
+#intro-grid {
+    display: grid;
+    min-height: 92vh;
+}
+
+
+
+#intro{
+    margin: 5% auto;
+    padding: 10% 0%;
+    text-align: left;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 2%;
+    min-height: 90vh;
+}
+
+#about-pic {
+    margin: 25% 0%;
+    text-align: right;
+}
+
+#about-text {
+    margin: 25% 30% 25% 0;
+    text-align: left;
+    font-size: 25px;
+
+}
+
+.about-link {
+    text-decoration: underline;
+    color: darkslategrey;
+}
+
+.about-link:hover {
+    color: black;
+}
+
+.about-icon {
+    color: black;
+    opacity: 70%;
+    font-size: 2rem;
+    margin: 5px;
+    
+}
+.about-icon:hover {
+    opacity: 100%;
+}
+
+#experience-section {
+
+}
+.experience {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 5% 0;
+}
+.experience-img {
+    margin: 15% auto;
+    width: 30rem;
+    border-radius: 0%;
+}
+.experience-details {
+    padding: 0% 0% 0 20%;
+    text-align: left;
+}
+
+.experience-title {
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 0;
+    opacity: 100%;
+    padding: 0;
+}
+
+.experience-duration{
+    font-weight: bold;
+    margin-top: 0%;
+    font-size: 25px;
+}
+
+.experience-description {
+    margin-right: 20%;
+    font-size: 30px;
+    font-weight: 400;
+}
+.techstack-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.techstack-icon {
+    opacity: 70%;
+    visibility: visible;
+    font-size: 2.5rem;
+}
+.techstack {
+    text-align: center;
+    visibility: hidden;
+    float: left;
+    width: 3rem;
+    font-size: 18px;
+}
+
+.techstack:hover {
+    visibility: visible;
+}
+
+.techstack-name {
+    margin: 0;
+}
+
+
+#project-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 5% 0;
+}
+.project-img {
+    margin: 15% auto;
+    width: 30rem;
+    border-radius: 0%;
+}
+.project-details {
+    padding: 0% 10% 0% 20%;
+    text-align: left;
+    font-size: 25px;
+}
+
+.project-details a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.project-details a:hover{
+    color: darkblue;
+}
+
+.project-title {
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 0;
+    opacity: 100%;
+    padding: 0;
+}
+
+
+.project-description {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#random-section {
+    min-height: 90vh;
+}
+
+
+.random {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    padding: 5% 0;
+}
+
+.random-img {
+    text-align: left;
+}
+
+.random-img img {
+    width: 20rem;
+}
+
+.random-details {
+    padding: 0% 10% 0% 20%;
+    text-align: left;
+    font-size: 25px;
+}
+
+.random-details a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.random-details a:hover{
+    color: darkblue;
+}
+
+.random-title {
+    font-weight: bolder;
+    font-size: 45px;
+    margin: 0;
+    opacity: 100%;
+    padding: 0;
+}
+
+
+.random-description {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.game-play {
+    opacity: 70%;
+    border: none;
+    background-color: transparent;
+    font-size: 2rem;
+}
+.game-play:hover {
+    opacity: 100%;
+    
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
